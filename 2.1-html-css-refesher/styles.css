@@ -1,0 +1,62 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+hr{
+    width: 100%;
+    height: 0.1em;
+}
+
+
+.Carla, .Martijn{
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: lightgray;
+    margin: 15px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+header{
+    grid-area: 1 / 1 / 3 / 3;
+    padding: 8px;
+}
+
+img{
+    grid-area: 1 / 2 / 3 / 3;
+    padding: 15px 0px;
+    margin-left: 110px;
+    margin-right: 0px;
+}
+
+p{
+    grid-area: 2 / 1 / 4 / 3;
+    padding-left: 8px;
+    padding-top: 3em;
+}
+
+.Approve-Decline{
+    grid-area: 4 / 1 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    border-top: lightgray solid 0.1em ;
+    padding: 0em;
+}
+
+.Approve{
+    color: rgb(25, 207, 25);
+    border-style: solid;
+    border-radius: 0.5em 0em 0em 0.5em;
+    padding: 7px 45px;
+}
+
+.Decline{
+    color: rgb(255, 0, 34);
+    border-style: solid;
+    border-radius: 1px 5px 5px 1px;
+    padding: 7px 45px; 
+}
